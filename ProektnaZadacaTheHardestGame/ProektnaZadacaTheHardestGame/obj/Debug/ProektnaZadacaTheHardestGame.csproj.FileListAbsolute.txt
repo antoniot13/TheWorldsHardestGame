@@ -46,3 +46,6 @@ C:\Users\Ilija\Dropbox\FINKI\4.Cetvrt Semestar-2015\Vizuelno programiranje\Proek
 C:\Users\Ilija\Dropbox\FINKI\4.Cetvrt Semestar-2015\Vizuelno programiranje\Proekt\ProektnaZadacaTheHardestGameNew\ProektnaZadacaTheHardestGame\obj\Debug\ProektnaZadacaTheHardestGame.StartForm.resources
 C:\Users\Ilija\Dropbox\FINKI\4.Cetvrt Semestar-2015\Vizuelno programiranje\Proekt\ProektnaZadacaTheHardestGameNew\ProektnaZadacaTheHardestGame\obj\Debug\ProektnaZadacaTheHardestGame.csproj.GenerateResource.Cache
 C:\Users\Ilija\Dropbox\FINKI\4.Cetvrt Semestar-2015\Vizuelno programiranje\Proekt\ProektnaZadacaTheHardestGameNew\ProektnaZadacaTheHardestGame\obj\Debug\ProektnaZadacaTheHardestGame.EndFormcs.resources
+C:\Users\dell\Desktop\TheWorldHardestGame\ProektnaZadacaTheHardestGame\ProektnaZadacaTheHardestGame\bin\Debug\ProektnaZadacaTheHardestGame.exe.config
+C:\Users\dell\Desktop\TheWorldHardestGame\ProektnaZadacaTheHardestGame\ProektnaZadacaTheHardestGame\obj\Debug\ProektnaZadacaTheHardestGame.exe
+C:\Users\dell\Desktop\TheWorldHardestGame\ProektnaZadacaTheHardestGame\ProektnaZadacaTheHardestGame\obj\Debug\ProektnaZadacaTheHardestGame.pdb
