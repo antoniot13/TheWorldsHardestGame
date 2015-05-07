@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,9 +23,14 @@ namespace ProektnaZadacaTheHardestGame
         public bool flagVtor { get; set; }
         public bool flagTret { get; set; }
         public Form endForm;
+        public SoundPlayer sound;
+        public bool flagS;
         public Form1()
         {
            InitializeComponent();
+           sound = new SoundPlayer(Properties.Resources.song);
+           sound.PlayLooping();
+           flagS = true;
             this.DoubleBuffered = true;
             flagVtor = false;
             flagTret = false;
@@ -246,6 +252,23 @@ namespace ProektnaZadacaTheHardestGame
             kvadrat.IsHit(level.BallTen.X, level.BallTen.Y);
             kvadrat.IsHit(level.BallEleven.X, level.BallEleven.Y);
             kvadrat.IsHit(level.BallTwelve.X, level.BallTwelve.Y);
+        }
+
+        private void volume_Click(object sender, EventArgs e)
+        {
+            flagS = !flagS;
+
+            if (flagS)
+            {
+                volume.Image = Properties.Resources.volume1;
+                sound.PlayLooping();
+
+            }
+            else
+            {
+                volume.Image = Properties.Resources.mute1;
+                sound.Stop();
+            }
         }
        
     }
