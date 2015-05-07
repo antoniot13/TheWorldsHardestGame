@@ -33,7 +33,7 @@ namespace ProektnaZadacaTheHardestGame
             kvadrat = new Square(brojLevel,Deaths);
             level = new Level(brojLevel);
             
-          //  slika = new Bitmap(Properties.Resources.ZaVlado);
+          
             timer = new Timer();
             timer.Tick += new EventHandler(timer_Tick);
             timer.Interval = 100;
@@ -65,21 +65,9 @@ namespace ProektnaZadacaTheHardestGame
 
             
         }
-       // bool keyUp = false, keyRight = false;
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-            //if (e.KeyCode == Keys.D)
-            //{
-            //    keyRight = false;
-            //}
-            //else 
-            //if (e.KeyCode == Keys.W)
-            //{
-            //    keyUp = false;
-            //}
-
-        }
-      
+     
+       
+          
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             
@@ -90,23 +78,19 @@ namespace ProektnaZadacaTheHardestGame
              else if (e.KeyCode == Keys.D)
             {
                 kvadrat.direction = Square.Direction.Right;
-               // keyRight = true;
+               
             }
              else if (e.KeyCode == Keys.W)
             {
                 kvadrat.direction = Square.Direction.Up;
-               // keyUp = true;
+               
 
             }
              else if (e.KeyCode == Keys.S)
             {
                 kvadrat.direction = Square.Direction.Down;
             }
-             //if (keyUp && keyRight)
-             //{
-             //    kvadrat.X += 5;
-             //    kvadrat.Y += 5;
-             //}
+             
 
 
               kvadrat.Move();
@@ -178,12 +162,12 @@ namespace ProektnaZadacaTheHardestGame
             else if (e.KeyChar == 'd')
             {
                 kvadrat.direction = Square.Direction.Right;
-                //keyRight = true;
+               
             }
             else if (e.KeyChar == 'w')
             {
                 kvadrat.direction = Square.Direction.Up;
-                // keyUp = false;
+               
 
             }
             else if (e.KeyChar == 's')
@@ -213,15 +197,7 @@ namespace ProektnaZadacaTheHardestGame
         }
 
 
-        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
-        {
-            this.Cursor = Cursors.Hand;
-        }
-
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            this.Cursor = Cursors.Arrow;
-        }
+        
 
         private void rectangleShape1_Click(object sender, EventArgs e)
         {
