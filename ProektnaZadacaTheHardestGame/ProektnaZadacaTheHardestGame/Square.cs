@@ -27,7 +27,6 @@ namespace ProektnaZadacaTheHardestGame
         public int Deaths { get; set; }
         public int BrojLevel { get; set; }
         bool flag { get; set; }
-        public Rectangle kvadrat { get; set; }
         public bool flagCrtanje { get; set; }
        
         Timer t;
@@ -54,7 +53,6 @@ namespace ProektnaZadacaTheHardestGame
             brush = new SolidBrush(Color.Red);
             pen = new Pen(Color.Black,2);
             direction = Direction.Right;
-            kvadrat = new Rectangle(X, Y, SIDE, SIDE);
             l1 = new Level(BrojLevel);
             Deaths = deaths;
             flag = false; 

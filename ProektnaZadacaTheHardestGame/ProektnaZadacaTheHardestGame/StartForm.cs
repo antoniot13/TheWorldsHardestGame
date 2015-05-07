@@ -11,20 +11,25 @@ using System.Windows.Forms;
 
 namespace ProektnaZadacaTheHardestGame
 {
+    
     public partial class StartForm : Form
     {
-        
+       
         Form formaLeveli;
         Form formaHowToPlay;
+        SoundPlayer soundWelcome;
        
-        bool soundFlag;
         public StartForm()
         {
+          
             this.DoubleBuffered = true;
             InitializeComponent();
-            soundFlag = true;
-           
-            //pictureBox4.Image = Properties.Resources.volume;
+            
+            soundWelcome = new SoundPlayer(Properties.Resources.Welcome_sound);
+            soundWelcome.Play();
+          
+            
+               
             
         }
         
@@ -34,6 +39,7 @@ namespace ProektnaZadacaTheHardestGame
             formaLeveli = new Form1();
             formaLeveli.Show();
             this.Hide();
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -41,6 +47,7 @@ namespace ProektnaZadacaTheHardestGame
             formaHowToPlay = new HowToPlayForm();
             formaHowToPlay.Show();
             this.Hide();
+            
         }
 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)

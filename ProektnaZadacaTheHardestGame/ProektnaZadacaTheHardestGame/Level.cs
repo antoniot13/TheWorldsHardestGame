@@ -11,10 +11,11 @@ namespace ProektnaZadacaTheHardestGame
    
     public class Level
     {
-        
+        //  Objeti od klasata Rectangle
         public Rectangle Golem1 { get; set; }
         public Rectangle Start1 { get; set; }
         public Rectangle End1 { get; set; }
+        // Instanci od klasata Ball 
         public Ball BallOne { get; set; }
         public Ball BallTwo { get; set; }
         public Ball BallThree { get; set; }
@@ -31,30 +32,36 @@ namespace ProektnaZadacaTheHardestGame
         public Ball BallFourteen { get; set; }
         public Ball BallFifteen { get; set; }
         public Ball BallSixteen { get; set; }
+        // static read only promenliva za golemina na topceto
         public static readonly int SIZEBALL = 5;
+        // static read only promenlivi za brzinata na topcinjata zavisno od levelot
         public static readonly int VELOCITYLEVEL1 = 20;
         public static readonly int VELOCITYLEVEL2 = 12;
         public static readonly int VELOCITYLEVEL3 = 12;
+        // static read only promenlivi za agolot na dvizenje na topcinjata
         public static readonly float ANGLE90 = (float)(Math.PI / 2);
         public static readonly float ANGLE45 = (float)(Math.PI / 4);
         public static readonly float ANGLE180 = (float)(Math.PI); 
-
+        // Informacinja za brojot na tekovniot level
         public int BrojLevel { get; set; }
+        // brush i pen objekti za iscrtuvanje na topcinjata i pravoagolnicite
         Brush b;
         Pen p;
         Brush brushTopce ;
         Brush bela;
        
 
-      
+         // Konstruktor 
         public Level(int brojlevel)
         {
+            // Inicijaliziranje na brush i pen objektite
             b = new SolidBrush(Color.LightGreen);
             p = new Pen(Color.Black, 2);
             brushTopce = new SolidBrush(Color.Blue);
             bela = new SolidBrush(Color.White);
-       
+            // Setiranje na levelot
             BrojLevel = brojlevel;
+            // Inicijalizacija na objektite vo zavisnost od levelot
             if (BrojLevel == 2)
             {
                 Golem1 = new Rectangle(110, 90, 300, 100);
@@ -139,10 +146,10 @@ namespace ProektnaZadacaTheHardestGame
 
             } 
         }
-       
+       // Metod za ctranje 
         public void Draw(Graphics g)
         {
-            
+            //Crtanjve vo zavisnot od levelot 
             if (BrojLevel == 2)
             {
                 g.DrawImage(Properties.Resources.slikaKockiLevel1, 110, 90);
@@ -185,6 +192,7 @@ namespace ProektnaZadacaTheHardestGame
                
             }     
         }
+        // Pomosna funkcinja koja gi isrctuva figurite koi se isti za site leveli
         public void DrawRectAndBalls(Graphics g)
         {
             g.DrawRectangle(p, Golem1);
