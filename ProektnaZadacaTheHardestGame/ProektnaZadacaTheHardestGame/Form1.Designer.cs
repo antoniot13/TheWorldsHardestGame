@@ -65,6 +65,8 @@
             this.volume.TabIndex = 2;
             this.volume.TabStop = false;
             this.volume.Click += new System.EventHandler(this.volume_Click);
+            this.volume.MouseLeave += new System.EventHandler(this.volume_MouseLeave);
+            this.volume.MouseMove += new System.Windows.Forms.MouseEventHandler(this.volume_MouseMove);
             // 
             // Form1
             // 

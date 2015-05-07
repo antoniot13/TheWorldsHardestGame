@@ -270,6 +270,16 @@ namespace ProektnaZadacaTheHardestGame
                 sound.Stop();
             }
         }
+
+        private void volume_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void volume_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Arrow;
+        }
        
     }
     

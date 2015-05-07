@@ -35,9 +35,9 @@ namespace ProektnaZadacaTheHardestGame
         // static read only promenliva za golemina na topceto
         public static readonly int SIZEBALL = 5;
         // static read only promenlivi za brzinata na topcinjata zavisno od levelot
-        public static readonly int VELOCITYLEVEL1 = 20;
-        public static readonly int VELOCITYLEVEL2 = 12;
-        public static readonly int VELOCITYLEVEL3 = 12;
+        public static readonly int VELOCITYLEVEL1 = 15;
+        public static readonly int VELOCITYLEVEL2 = 20;
+        public static readonly int VELOCITYLEVEL3 = 13;
         // static read only promenlivi za agolot na dvizenje na topcinjata
         public static readonly float ANGLE90 = (float)(Math.PI / 2);
         public static readonly float ANGLE45 = (float)(Math.PI / 4);
@@ -67,13 +67,13 @@ namespace ProektnaZadacaTheHardestGame
                 Golem1 = new Rectangle(110, 90, 300, 100);
                 Start1 = new Rectangle(80, 160, 30, 30);
                 End1 = new Rectangle(410, 90, 30, 30);
-                BallOne = new Ball(120, 100, SIZEBALL, VELOCITYLEVEL1, ANGLE180);
+                BallOne = new Ball(120, 100, SIZEBALL, VELOCITYLEVEL2, ANGLE180);
                 BallOne.Bounds = Golem1;
-                BallTwo = new Ball(400, 125, SIZEBALL, VELOCITYLEVEL1, ANGLE180);
+                BallTwo = new Ball(400, 125, SIZEBALL, VELOCITYLEVEL2, ANGLE180);
                 BallTwo.Bounds = Golem1;
-                BallThree = new Ball(120, 150, SIZEBALL, VELOCITYLEVEL1, ANGLE180);
+                BallThree = new Ball(120, 150, SIZEBALL, VELOCITYLEVEL2, ANGLE180);
                 BallThree.Bounds = Golem1;
-                BallFour = new Ball(400, 175, SIZEBALL, VELOCITYLEVEL1, ANGLE180);
+                BallFour = new Ball(400, 175, SIZEBALL, VELOCITYLEVEL2, ANGLE180);
                 BallFour.Bounds = Golem1;
             }
             else if (BrojLevel == 1)
@@ -81,29 +81,29 @@ namespace ProektnaZadacaTheHardestGame
                 Golem1 = new Rectangle(110, 90, 300, 160);
                 Start1 = new Rectangle(60, 150, 50, 40);
                 End1 = new Rectangle(410, 150, 50, 40);
-                BallOne = new Ball(120, 95, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallOne = new Ball(120, 95, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallOne.Bounds = Golem1;
-                BallTwo = new Ball(145, 245, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallTwo = new Ball(145, 245, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallTwo.Bounds = Golem1;
-                BallThree = new Ball(170, 95, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallThree = new Ball(170, 95, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallThree.Bounds = Golem1;
-                BallFour = new Ball(195, 245, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallFour = new Ball(195, 245, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallFour.Bounds = Golem1;
-                BallFive = new Ball(220, 95, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallFive = new Ball(220, 95, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallFive.Bounds = Golem1;
-                BallSix = new Ball(245, 245, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallSix = new Ball(245, 245, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallSix.Bounds = Golem1;
-                BallSeven = new Ball(270, 95, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallSeven = new Ball(270, 95, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallSeven.Bounds = Golem1;
-                BallEight = new Ball(295, 245, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallEight = new Ball(295, 245, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallEight.Bounds = Golem1;
-                BallNine = new Ball(320, 95, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallNine = new Ball(320, 95, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallNine.Bounds = Golem1;
-                BallTen = new Ball(345, 245, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallTen = new Ball(345, 245, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallTen.Bounds = Golem1;
-                BallEleven = new Ball(370, 95, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallEleven = new Ball(370, 95, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallEleven.Bounds = Golem1;
-                BallTwelve = new Ball(395, 245, SIZEBALL, VELOCITYLEVEL2, ANGLE90);
+                BallTwelve = new Ball(395, 245, SIZEBALL, VELOCITYLEVEL1, ANGLE90);
                 BallTwelve.Bounds = Golem1;
             }
             else if (BrojLevel == 3)
