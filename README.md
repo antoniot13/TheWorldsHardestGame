@@ -29,14 +29,14 @@
 -	Статична промелива SIZEBALL за големината на топчињата <br/>
 -	Три статични променливи (VELOCITYLEVEL1, VELOCITYLEVEL2, VELOCITYLEVEL3) кои ни ги чуваат брзините на движење на топчињата за секој левел посебно <br/>
 -	Три статични променливи (ANGLE45, ANGLE90, ANGLE180) кои чуваат агол на движење на топчињата <br/>
--	Променлива BrojLevel која го чува бројот на тековниот левел <br/>
+-	Променлива BrojLevel која го чува бројот на тековниот левел <br/><br/>
 
 Форма StartForm: <br/>
-    	Се појавува при вклучување на апликацијата и содржи мени составено од  PictureBox контроли чии Click events не носат на почеток на играта(левел 1), објаснување на правилата или исклучување на апликацијата. <br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Се појавува при вклучување на апликацијата и содржи мени составено од  PictureBox контроли чии Click events не носат на почеток на играта(левел 1), објаснување на правилата или исклучување на апликацијата. <br/><br/>
 Форма HowToPlay: <br/> 
-    	Дава опис на правилата и нуди можност за старт на играта или враќање на почетното мени. <br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Дава опис на правилата и нуди можност за старт на играта или враќање на почетното мени. <br/><br/>
 Форма Form1: <br/> 
-	  Главната форма служи за исцртување на левелите(настанот Paint) и содржи настани како Кеy_Press и Key_Down кои го контролираат движењето на квадратчето.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Главната форма служи за исцртување на левелите(настанот Paint) и содржи настани како Кеy_Press и Key_Down кои го контролираат движењето на квадратчето.
 ## 3.Опис на класи 
 Како пример ги земаме двете класи [Ball](https://github.com/vtaseski/TheWorldsHardestGame/blob/master/ProektnaZadacaTheHardestGame/ProektnaZadacaTheHardestGame/Ball.cs) и [Level](https://github.com/vtaseski/TheWorldsHardestGame/blob/master/ProektnaZadacaTheHardestGame/ProektnaZadacaTheHardestGame/Level.cs) за кои има пишувано коментари за објаснување на променливите и методите.  <br/>
 ## 4.Screenshots од апликацијата <br/>
