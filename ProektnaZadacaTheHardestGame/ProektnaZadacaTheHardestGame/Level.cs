@@ -35,7 +35,7 @@ namespace ProektnaZadacaTheHardestGame
         // static read only promenliva za golemina na topceto
         public static readonly int SIZEBALL = 5;
         // static read only promenlivi za brzinata na topcinjata zavisno od levelot
-        public static readonly int VELOCITYLEVEL1 = 16;
+        public static readonly int VELOCITYLEVEL1 = 14;
         public static readonly int VELOCITYLEVEL2 = 20;
         public static readonly int VELOCITYLEVEL3 = 13;
         // static read only promenlivi za agolot na dvizenje na topcinjata
